@@ -1,1 +1,63 @@
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+.container {
+  @apply max-w-291.5 mx-auto;
+}
+header{
+  @apply bg-[#EEEDDE] pt-[50px];
+}
+nav {
+  @apply flex items-center justify-between;
+}
+nav ul {
+  @apply text-[#203239] text-base font-poppins font-light flex items-center gap-x-25;
+}
+nav ul li a {
+  @apply relative pb-2;
+}
+nav ul li a:hover {
+  @apply font-semibold;
+}
+nav ul li a::after {
+  @apply content-[''] absolute left-1/2 bottom-0 h-0.75 w-0 bg-[#FF7A30] rounded-full -translate-x-1/2 transition-all duration-300;
+}
+nav ul li a:hover::after {
+  @apply w-[60%];
+}
+#banner{
+  @apply bg-[#EEEDDE] py-30;
+}
+.banner {
+  @apply flex items-center justify-between;
+}
+.bannerContent h1 {
+  @apply text-[56px] text-[#203239] font-poppins font-semibold pb-6;
+}
+.bannerContent p {
+  @apply w-[545px] text-base text-[#203239] opacity-55 font-poppins font-light;
+}
+.bannerSearch{
+    @apply flex items-center gap-x-4 pt-[55px]
+}
+.position{
+  @apply relative;
+}
+.position input{
+  @apply w-[508px] bg-white py-6 pl-14 pr-5 outline-none rounded-[15px];
+}
+.position input::placeholder{
+  @apply text-[#203239] opacity-55 font-light font-poppins;
+}
+.position img {
+  @apply absolute top-1/2 left-6 -translate-y-1/2;
+}
+.searchBtn{
+    @apply text-[#20323980] text-base font-poppins font-light py-6 px-10 bg-white cursor-pointer z-10 rounded-[15px]
+}
+.bannerImg {
+  @apply w-[373px];
+}
