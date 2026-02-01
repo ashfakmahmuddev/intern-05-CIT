@@ -194,7 +194,7 @@
 }
 header {
   background-color: #EEEDDE;
-  padding-top: 50px;
+  padding-top: calc(var(--spacing) * 12.5);
 }
 nav {
   display: flex;
@@ -259,7 +259,7 @@ nav ul li a:hover::after {
   color: #203239;
 }
 .bannerContent p {
-  width: 545px;
+  width: calc(var(--spacing) * 136.25);
   font-family: var(--font-poppins);
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
@@ -272,7 +272,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   column-gap: calc(var(--spacing) * 4);
-  padding-top: 55px;
+  padding-top: calc(var(--spacing) * 13.75);
 }
 .position {
   position: relative;
@@ -316,7 +316,19 @@ nav ul li a:hover::after {
   color: #20323980;
 }
 .bannerImg {
-  width: 373px;
+  width: calc(var(--spacing) * 93.25);
+}
+#about {
+  padding-block: calc(var(--spacing) * 25);
+}
+.about h3 {
+  width: calc(var(--spacing) * 132.5);
+  padding-bottom: calc(var(--spacing) * 16);
+  font-family: var(--font-poppins);
+  font-size: 36px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: #203239;
 }
 @property --tw-font-weight {
   syntax: "*";

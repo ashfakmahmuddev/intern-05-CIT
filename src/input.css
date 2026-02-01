@@ -3,12 +3,12 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
-
+/* Header Part Start */
 .container {
   @apply max-w-291.5 mx-auto;
 }
 header{
-  @apply bg-[#EEEDDE] pt-[50px];
+  @apply bg-[#EEEDDE] pt-12.5;
 }
 nav {
   @apply flex items-center justify-between;
@@ -28,6 +28,9 @@ nav ul li a::after {
 nav ul li a:hover::after {
   @apply w-[60%];
 }
+/* Header Part End */
+
+/* Banner Part Start */
 #banner{
   @apply bg-[#EEEDDE] py-30;
 }
@@ -38,10 +41,10 @@ nav ul li a:hover::after {
   @apply text-[56px] text-[#203239] font-poppins font-semibold pb-6;
 }
 .bannerContent p {
-  @apply w-[545px] text-base text-[#203239] opacity-55 font-poppins font-light;
+  @apply w-136.25 text-base text-[#203239] opacity-55 font-poppins font-light;
 }
 .bannerSearch{
-    @apply flex items-center gap-x-4 pt-[55px]
+    @apply flex items-center gap-x-4 pt-13.75
 }
 .position{
   @apply relative;
@@ -59,5 +62,15 @@ nav ul li a:hover::after {
     @apply text-[#20323980] text-base font-poppins font-light py-6 px-10 bg-white cursor-pointer z-10 rounded-[15px]
 }
 .bannerImg {
-  @apply w-[373px];
+  @apply w-93.25;
 }
+/* Banner Part End */
+
+/* About Part Start */
+#about{
+    @apply py-25
+}
+.about h3{
+    @apply text-[#203239] text-[36px] font-poppins font-semibold w-132.5 pb-16
+}
+/* About Part End */
