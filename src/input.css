@@ -7,7 +7,7 @@
 .container {
   @apply max-w-291.5 mx-auto;
 }
-header{
+header {
   @apply bg-[#EEEDDE] pt-12.5;
 }
 nav {
@@ -31,7 +31,7 @@ nav ul li a:hover::after {
 /* Header Part End */
 
 /* Banner Part Start */
-#banner{
+#banner {
   @apply bg-[#EEEDDE] py-30;
 }
 .banner {
@@ -43,23 +43,23 @@ nav ul li a:hover::after {
 .bannerContent p {
   @apply w-136.25 text-base text-[#203239] opacity-55 font-poppins font-light;
 }
-.bannerSearch{
-    @apply flex items-center gap-x-4 pt-13.75
+.bannerSearch {
+  @apply flex items-center gap-x-4 pt-13.75;
 }
-.position{
+.position {
   @apply relative;
 }
-.position input{
+.position input {
   @apply w-[508px] bg-white py-6 pl-14 pr-5 outline-none rounded-[15px];
 }
-.position input::placeholder{
+.position input::placeholder {
   @apply text-[#203239] opacity-55 font-light font-poppins;
 }
 .position img {
   @apply absolute top-1/2 left-6 -translate-y-1/2;
 }
-.searchBtn{
-    @apply text-[#20323980] text-base font-poppins font-light py-6 px-10 bg-white cursor-pointer z-10 rounded-[15px]
+.searchBtn {
+  @apply text-[#20323980] text-base font-poppins font-light py-6 px-10 bg-white cursor-pointer z-10 rounded-[15px];
 }
 .bannerImg {
   @apply w-93.25;
@@ -67,10 +67,90 @@ nav ul li a:hover::after {
 /* Banner Part End */
 
 /* About Part Start */
-#about{
-    @apply py-25
+#about {
+  @apply py-25;
 }
-.about h3{
-    @apply text-[#203239] text-[36px] font-poppins font-semibold w-132.5 pb-16
+.about h3 {
+  @apply text-[#203239] text-[36px] font-poppins font-semibold w-132.5 pb-16;
+}
+.aboutContent {
+  @apply flex items-center justify-between;
+}
+.aboutContentText {
+  @apply relative w-75 rounded-[10px] px-8 pt-5 pb-6;
+}
+.aboutContentPosition {
+  @apply h-[30px] w-2 bg-[#FF7527] rounded-[6px] absolute top-4 left-0;
+}
+.aboutContentText:hover {
+  @apply shadow-lg shadow-black/25 transition-all duration-400;
+}
+.aboutContentTextHeader {
+  @apply flex items-center justify-between text-base font-poppins font-medium;
+}
+.aboutContentTextHeader h4 {
+  @apply text-[#203239];
+}
+.aboutContentTextHeader span {
+  @apply text-[#FF7527];
+}
+.aboutContentText p {
+  @apply text-base text-[#203239] opacity-55 font-poppins font-light leading-[30px] pt-2 pb-10;
+}
+.aboutContentText a {
+  @apply flex items-center gap-x-3.5 text-[#203239] text-base font-poppins font-medium;
 }
 /* About Part End */
+
+/* PropertiesOne Part Start */
+#propertiesOne {
+  @apply bg-[#EEEDDE] py-[68px] font-poppins;
+}
+.propertiesOne h4,
+.propertiesTwo h4 {
+  @apply text-[#FF7527] text-base font-medium pb-2;
+}
+.propertiesOne h3,
+.propertiesTwo h3 {
+  @apply text-[#203239] text-[36px] font-semibold pb-[64px];
+}
+.propertiesOneFlex {
+  @apply flex gap-x-[64px];
+}
+.propertiesOneFlex img {
+  @apply w-[525px];
+}
+.propertiesOneContent h2 {
+  @apply text-[#203239] text-[36px] font-semibold pb-6;
+}
+.propertiesOneContent p {
+  @apply text-[#203239] text-base font-light pb-12;
+}
+.propertiesOneContentBtn {
+  @apply flex items-center gap-x-12;
+}
+.propertiesOneContentBtn button {
+  @apply flex items-center gap-x-3 border border-[#203239] py-3 px-10 rounded-[10px] cursor-pointer;
+}
+.propertiesOneContentBtn button:hover {
+  @apply bg-[#203239] text-white transition-all duration-400;
+}
+/* PropertiesOne Part End */
+
+/* PropertiesTwo Part Start */
+#propertiesTwo {
+  @apply py-[68px] font-poppins;
+}
+.propertiesTwoFlex {
+  @apply flex justify-between gap-x-6;
+}
+.propertiesTwoContent img {
+  @apply w-full h-[454px];
+}
+.propertiesTwoContent h5 {
+  @apply text-[#203239] text-[24px] font-medium pt-4 pb-2;
+}
+.propertiesTwoContent p {
+  @apply text-[#203239] text-base font-light;
+}
+/* PropertiesTwo Part End */
