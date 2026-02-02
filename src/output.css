@@ -12,6 +12,12 @@
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -502,6 +508,90 @@ nav ul li a:hover::after {
   --tw-font-weight: var(--font-weight-light);
   font-weight: var(--font-weight-light);
   color: #203239;
+}
+#contact {
+  background-color: #EEEDDE;
+  padding-block: calc(var(--spacing) * 12);
+  font-family: var(--font-poppins);
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactContent h3 {
+  padding-bottom: 74px;
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: #203239;
+}
+.contactNum {
+  display: flex;
+  align-items: center;
+  column-gap: calc(var(--spacing) * 6);
+}
+.call {
+  border-radius: 10px;
+  background-color: var(--color-white);
+  padding-inline: calc(var(--spacing) * 10);
+  padding-top: calc(var(--spacing) * 6);
+  padding-bottom: 15px;
+}
+.callFlex {
+  display: flex;
+  align-items: center;
+  column-gap: calc(var(--spacing) * 7);
+}
+.callFlex i {
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+.callFlexNumber {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  color: #203239;
+}
+.callFlexNumber h6 {
+  padding-left: calc(var(--spacing) * 2);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
+.callBtn {
+  padding-top: calc(var(--spacing) * 7);
+  text-align: center;
+}
+.call button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #203239;
+  padding-inline: calc(var(--spacing) * 4.5);
+  padding-block: calc(var(--spacing) * 2.5);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+}
+footer {
+  background-color: #203239;
+  padding-block: calc(var(--spacing) * 8);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  column-gap: 64px;
+}
+.footer ul li a {
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  color: #EEEDDE;
 }
 @property --tw-font-weight {
   syntax: "*";
